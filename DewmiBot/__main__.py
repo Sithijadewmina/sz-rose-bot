@@ -396,7 +396,6 @@ def DewmiBot_about_callback(update, context):
                         ),
                     ],
                     [InlineKeyboardButton(text="How to use me", callback_data="aboutmanu_howto")],
-                ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
             ),
         )
