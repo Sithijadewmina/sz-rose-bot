@@ -66,16 +66,15 @@ from DewmiBot.modules.system_stats import bot_sys_stats
 import DewmiBot.modules.sql.users_sql as sql
 
 PM_START_TEXT = f"""
-✨Hello There , I'm szrosebot
+✨Hello There , I'm Lusi X bot
 An anime - Themed advanced telegram Group management 
 Bot For help You Manage & Protect Your Groups.
 ➼ `{sql.num_users()}` *Users*
 ➼ `{sql.num_chats()}`  *Chats*
-♻️Maintained by [supunma <sz/>](https://t.me/szteambots)
 """
 
 HELP_STRINGS = f"""
-✨Hello There , I'm szrosebot
+✨Hello There , I'm Lusi x bot
 An anime - Themed advanced telegram Group management
 Bot For help You Manage & Protect Your Groups.
 **General commands**:
@@ -99,7 +98,7 @@ BUTTONS = (
     [
         [
             InlineKeyboardButton(
-                text="🆘 Help 🆘", callback_data = "helpmenu_"
+                text="🆘 Help 🆘", callback_data = "help_back"
             ),
             InlineKeyboardButton(
                 text="📊 Stats 📊",
@@ -549,7 +548,7 @@ def get_help(update, context):
                     [
                         InlineKeyboardButton(
                             text="Click me for help!",
-                            url="https://t.me/szrosebot",
+                            url="https://t.me/Thelusibot",
                         )
                     ],
                 ]
