@@ -249,7 +249,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Quick Setup Guide", callback_data = "helpmenu_")]],
+                [[InlineKeyboardButton(text="Quick Setup Guide", callback_data = "help_back")]],
             ),
         )
     
@@ -310,7 +310,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "╔═════「   szrosebot   」═════╗\n\nHere Is The Available  Help\n          For The {}   \n\n╚═════「  szrosebot   」═════╝\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ".format(
+                "╔═════「   Lusi X bot   」═════╗\n\nHere Is The Available  Help\n          For The {}   \n\n╚═════「  Lusi X bot  」═════╝\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -396,6 +396,8 @@ def DewmiBot_about_callback(update, context):
                             text="Inline search 🔎", switch_inline_query_current_chat=""
                         ),
                     ],
+                    [InlineKeyboardButton(text="How to use me", callback_data="aboutmanu_howto")],
+                ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
                 ]
             ),
@@ -413,7 +415,7 @@ def DewmiBot_about_callback(update, context):
             text=f"** Here's basic Help regarding* *How to use Me? **"
             f"\n\n Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n\n After adding promote me manually with full rights for faster experience.\n"
-            f"\n\n Than send `/admincache@szrosebot` in that chat to refresh admin list in My database.\n"
+            f"\n\n Than send `/admincache@TheLusibot` in that chat to refresh admin list in My database.\n"
             f"\n\n *All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -438,7 +440,7 @@ def DewmiBot_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*Let's make your group bot effective now*"
-            f"\nCongragulations, @szrosebot🇱🇰 now ready to manage your group."
+            f"\nCongragulations, @TheLusibot🇱🇰 now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -465,14 +467,14 @@ def DewmiBot_about_callback(update, context):
         )
     elif query.data == "aboutmanu_spamprot":
         query.message.edit_text(
-            text="* @szrosebot🇱🇰 support chats*"
+            text="* @TheLusibot🇱🇰 support chats*"
             "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/slbotzone"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/szteambots"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/TmCyberUs"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/TeamCyberUs"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto"),
