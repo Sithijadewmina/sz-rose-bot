@@ -88,9 +88,9 @@ Bot For help You Manage & Protect Your Groups.
 
 DONATE_STRING = """
 ➢ Heya,glad to hear you want to donate !
-➢ You can support the project @supunmabot
+➢ You can support the project @Sithijasassistant_bot
 ➢ Supporting isnt always financial! [Youtube](https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA)
-➢ Those who cannot provide monetary support are welcome to help us develop the bot at @szteambots.
+➢ Those who cannot provide monetary support are welcome to help us develop the bot in @TeamCyberUs.
 """
 STICKERS = "CAACAgUAAx0CS6YhoQAC02VhQUW7iB4ci3lcSXHtLVOjFzZlDQACUQMAAvPvEVY76k2QN6u20iAE"   
 
@@ -107,17 +107,17 @@ BUTTONS = (
         ],
         [
             InlineKeyboardButton(
-                text="🗣 Updates", url="https://t.me/szteambots"
+                text="🗣 Updates", url="https://t.me/TeamCyberUs"
             ),
             InlineKeyboardButton(
                 text="👥 Support",
-                url="https://t.me/slbotzone",
+                url="https://t.me/TmCyberUs",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="➕ Add Me To Your Group ➕",
-                url=f"t.me/szrosebot?startgroup=true",
+                url=f"t.me/TheLusibot?startgroup=true",
             )
         ],
     ]
@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "*Promote me as administrator of the group, otherwise I will not be able to work properly*\n Don't forget follow my news channel @szroseupdates.\n\n*New to szrosebot, Touch the below button to for quick setup guide*".format(
+            "*Promote me as administrator of the group, otherwise I will not be able to work properly*\n Don't forget follow my news channel @TeamCyberUs.\n\n*New to szrosebot, Touch the below button to for quick setup guide*".format(
                 uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
