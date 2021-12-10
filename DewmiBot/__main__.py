@@ -395,8 +395,12 @@ def DewmiBot_about_callback(update, context):
                             text="Inline search 🔎", switch_inline_query_current_chat=""
                         ),
                     ],
-                    [InlineKeyboardButton(text="How to use me", callback_data="aboutmanu_howto")],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                    [
+                        InlineKeyboardButton(text="How to use me", callback_data="aboutmanu_howto")
+                    ],
+                    [
+                        InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")
+                    ],
             ),
         )
     elif query.data == "aboutmanu_back":
